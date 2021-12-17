@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.navbar.bg-active{
+    background-color: white;
+    z-index: 3;
+    -webkit-box-shadow: 0px 6px 7px -5px rgba(210, 210, 210, 1);
+    -moz-box-shadow: 0px 6px 7px -5px rgba(210, 210, 210, 1);
+    box-shadow: 0px 6px 7px -5px rgba(210, 210, 210, 1);
+    opacity: 0.96;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-toggler-icon{
+    font-size: 30px;
+}
+
+.navbar-brand:hover{
+    color: black;
+}
+
+.krombudLogo{
+    width: 80px;
+    height: 80px;
+
+}
+
+.navbar-toggler{
+    color: rgb(126, 125, 125);
+    width: 100%;
+}
+
+.nav-link{
+    text-align: center;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-link:hover{
+    color: black;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.dropdown-item{
+    background: transparent;
+}
+
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    border: 2px solid #d43f3f;
+    margin-right: -30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    background-color: #d43f3f;
+    color: white;
+    font-weight: 700;
+
+}
+
+
+/* main */
+
+.main{
+    background: url(./img/room1.jpg)no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+    z-index: 4;
+}
+
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'robot';
+}
+
+.btn1{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: #d43f3f;
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn1:hover{
+    background-color: #c51a1a;
+    transition: 0.5s;
+}
+
+/* up */
+
+.btnUp{
+    display: none;
+}
+
+.up{
+    display: block;
+    position: fixed;
+    z-index: 3;
+    left: 96%;
+    bottom: 4%;
+    border: none;
+    background-color: transparent;
+}
+
+.upIcon{
+    color: rgb(61, 61, 61);
+    font-size: 3vh;
+    z-index: 3;
+}
+
+.upIcon:hover:hover{
+    transition: 0.5s;
+    color: rgb(24, 24, 24);
+}
+
+
+ /* PRODUCT  */
+ .product{
+    scroll-margin-top: 1px;
+}
+
+.product-img:hover{
+    transition: 0.5s;
+    transform: scale(1.08);
+    -webkit-box-shadow: 0px 0px 23px -1px rgba(144, 144, 146, 1);
+    -moz-box-shadow: 0px 0px 23px -1px rgba(144, 144, 146, 1);
+    box-shadow: 0px 0px 23px -1px rgba(144, 144, 146, 1);
+    transition: 0.8s;
+}
+
+/* proposition */
+.proposition{
+scroll-margin-top: 150px;
+}
+
+.proposition-row{
+    opacity: 0.8;
+}
+
+.proposition-row:hover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.proposition-text{
+    background-color: rgb(199, 199, 199);
+    padding: 30px 20px 20px 50px;
+    font-size: 18px;
+}
+
+.proposition-pic{
+    z-index: 2;
+    background-color: rgb(199, 199, 199);
+    padding: 30px;
+}
+
+.proposition-para{
+    text-align: left;
+}
+
+
+
+/* story */
+.story{
+    scroll-margin-top: 100px;
+}
+
+.story-text{
+    background-color: rgb(199, 199, 199);
+    padding: 30px;
+    text-align: center;
+    height: 300px;
+}
+
+.story-para{
+    font-size: 19px;
+}
+
+.story-icon-wrapper{
+    padding: 2vw;
+}
+
+.story-icon{
+    padding: 2vw;
+    opacity: 0.85;
+}
+
+.story-icon:hover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+
+
+/* bild */
+
+.bild{
+    margin: 40px 0 40px 0;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./img/believe.png)no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.bild-dreams{
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px #a3a3a3;
+}
+
+
+/* contact */
+
+#contact{
+    scroll-margin-top: 80px;
+}
+
+#map {
+    height: 330px;
+}
+
+
+.footerWrapper{
+    background-color: black;
+    color: white;
+}
+
+.footerWrapper input{
+    height: 45px;
+    width: 55%;
+    border: 2px solid white;
+    outline: none;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footerWrapper::placeholder{
+    color: white;
+}
+
+.btn2{
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -10px;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 490px){
+    .proposition-img{
+        width: 260px;
+        height: auto;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-toggler-icon{
+        color: rgb(201, 127, 127);
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .krombudLogo{
+        display: none;
+    }
+    .nav-link{
+        font-weight: 700;
+    }
+    .upIcon{
+        font-size: 26px;
+    }
+}

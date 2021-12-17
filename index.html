@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <title>Page</title>
+  </head>
+  <body>
+
+
+<!-- navbar -->
+      <header>
+          <nav class="navbar navbar-expand-lg">
+            <div class="row container m-auto my-2">
+                <div class="logo col-lg-4 ">
+                    <img src="img/KromBud.png" class="krombudLogo" />
+                    <a class="navbar-brand mx-4" href="#">Your perfect home</a>
+                    <div class="row">
+                        <div class="col-8"></div>
+                        <div class="col-4">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon "><i class="bi bi-list"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse col-lg-7 mx-5" id="navbarScroll">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#main">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product">services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#proposition" >concept</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#story" tabindex="-1" aria-disabled="true">story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                    <!-- <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn0" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+      </header>
+      <button class="btnUp"><a class="upIcon" href="#main"><i class="bi bi-arrow-up-circle-fill"></i></a></button>
+
+      <section class="main" id="main">
+          <div class="container py-5">
+              <!-- <div class="row py-5">
+                  <div class="col-lg-7 pt-5 text-center">
+                      <h1 class="pt-5">Lorem ipsum dolor sit amet consectetur.</h1>
+                      <button class="btn1 mt-3">More</button>
+                  </div>
+              </div> -->
+          </div>
+      </section>
+
+
+<!-- PRODUCT -->
+
+      <section class="product" id="product">
+          <div class="container py-5">
+              <div class="row py-5" >
+                  <div class="col-lg-5 m-auto text-center">
+                      <h1>Our services</h1>
+                      <h6 style="color: #d43f3f">Customize your project!</h6>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-3 text-center">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <img src="./img/painting.jpg" alt="painting" class="m-0 product-img">
+                        </div>
+                    </div>
+                    <h5>Painting</h5>
+                    <p>Up to 15 EUR</p>
+                  </div>
+                  <div class="col-lg-3 text-center">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <img src="./img/design.jpg" alt="painting" class="m-0 product-img">
+                        </div>
+                    </div>
+                    <h5>Designing</h5>
+                    <p>Choose your own unique style</p>
+                  </div>
+                  <div class="col-lg-3 text-center">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <img src="./img/architecture.jpg" alt="painting" class="m-0 product-img">
+                        </div>
+                    </div>
+                    <h5>Planning</h5>
+                    <p>Order your own plan</p>
+                  </div>
+                  <div class="col-lg-3 text-center">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <img src="./img/10.jpg" alt="painting" class="m-0 product-img">
+                        </div>
+                    </div>
+                    <h5>Consultancy</h5>
+                    <p>Contact an advisor</p>
+                  </div>
+              </div>
+              <div class="row py-5">
+                  <div class="col-lg-6 text-center m-auto">
+                      <button class="btn1">Check prices</button>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+<!-- proposition -->
+
+      <section class="proposition" id="proposition">
+          <div class="container">
+              <div class="row proposition-row">
+                <div class="col-lg-4 proposition-pic text-center">
+                    <img class="proposition-img" src="./img/11-product.jpg" alt="architecture">
+                </div>
+
+                <div class="col-lg-7 proposition-text text-center">
+                    <h2 class="proposition-para">Plan</h2>
+                    <p class="proposition-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, odio earum nisi nulla perferendis voluptatibus aperiam veniam velit, dolorum soluta dolores nostrum quibusdam, minima praesentium facere in rerum amet hic excepturi at consequuntur! Nihil nam fugit expedita esse quam ipsam tempora, libero ex enim aliquid quae doloremque qui vol.
+                    </p>
+
+                </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="proposition my-5">
+        <div class="container">
+            <div class="row proposition-row">
+              <div class="col-lg-1">
+              </div>
+
+              <div class="col-lg-7 proposition-text text-center">
+                  <h2 class="proposition-para">Project</h2>
+                  <p class="proposition-para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, odio earum nisi nulla perferendis voluptatibus aperiam veniam velit, dolorum soluta dolores nostrum quibusdam, minima praesentium facere in rerum amet hic excepturi at consequuntur! Nihil nam fugit expedita esse quam ipsam tempora, libero ex enim aliquid quae.
+                  </p>
+              </div>
+              <div class="col-lg-4 m-auto proposition-pic text-center">
+                <img class="proposition-img" src="./img/12-architecture.jpg" alt="architecture">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="proposition">
+        <div class="container">
+            <div class="row proposition-row">
+              <div class="col-lg-4 proposition-pic text-center">
+                  <img class="proposition-img" src="./img/9.jpg" alt="kitchen">
+              </div>
+
+              <div class="col-lg-7 proposition-text text-center">
+                  <h2 class="proposition-para">Kitchen</h2>
+                  <p class="proposition-para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, odio earum nisi nulla perferendis voluptatibus aperiam veniam velit, dolorum soluta dolores nostrum quibusdam, minima praesentium facere in rerum amet hic excepturi at consequuntur! Nihil nam fugit expedita esse quam ipsam tempora, libero ex enim aliquid quae doloremque qui voluptatibus saepe architecto fuga itaque excepturi delectus quisquam necessitatibus adipisci!
+                  </p>
+
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="proposition my-5">
+      <div class="container">
+          <div class="row proposition-row">
+            <div class="col-lg-1">
+            </div>
+
+            <div class="col-lg-7 proposition-text text-center">
+                <h2 class="proposition-para">Bathroom</h2>
+                <p class="proposition-para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, atque corrupti placeat sunt inventore accusantium doloribus in provident rem. Voluptate excepturi eaque saepe modi accusamus, quas qui laboriosam ad similique commodi dolor! Optio minus iure placeat eum, molestias porro cupiditate nostrum incidunt assumenda. Sed repellat suscipit nostrum aspernatur aut pariatur, eaque temporibus ipsam in, porro minima excepturi eos cupiditate voluptatum accusamus enim ut quidem veniam. Laudantium, consectetur!
+                </p>
+            </div>
+            <div class="col-lg-4 m-auto proposition-pic text-center">
+              <img class="proposition-img" src="./img/8.jpg" alt="architecture">
+          </div>
+        </div>
+      </div>
+  </section>
+
+      <!-- <section class="about">
+          <div class="container py-5">
+              <div class="row py-5">
+                  <div class="col-lg-8 m-auto">
+                      <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                      <h6 style="color: red">Lorem ipsum dolor sit amet.</h6>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-4">
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section> -->
+
+<!-- story -->
+
+      <section class="story" id="story">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-lg-5 m-auto story-text d-flex align-items-center ">
+                    <div>
+                      <h3>How we operate</h3>
+                      <p class="story-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas deleniti ullam, fugit velit eveniet nemo ut possimus ducimus aspernatur hic quis obcaecati natus beatae at sapiente asperiores aperiam mollitia.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 m-auto">
+                    <div class="row text-center story-icon-wrapper">
+                      <div class="col-lg-4">
+                          <img src="./img/1.jpg" class="story-icon pb-4" alt="icon">
+                          <h5>I Idea</h5>
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="./img/3.jpg" class="story-icon pb-4" alt="icon">
+                          <h5>II Plan</h5>
+                      </div>
+                      <div class="col-lg-4">
+                          <img src="./img/2.jpg" class="story-icon pb-4" alt="icon">
+                          <h5>III Implementation</h5>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- bild -->
+
+      <section class="bild py-5 row align-items-end">
+          <div class="container py-5 ">
+              <div class="row justify-content-end">
+                <div class="col-lg-5 ">
+                      <h1 class="bild-dreams py-4">Make your dreams came true</h1>
+                      <button class="btn1">Book an appointment</button>
+                </div>
+              </div>
+          </div>
+      </section>
+
+<!-- contact -->
+
+      <section class="contact py-5" id="contact">
+          <div class="container py-5">
+              <div class="row">
+                  <div class="col-lg-5 m-auto text-center">
+                      <h1>Contact Us</h1>
+                      <h6 style="color: #d43f3f">Customize your project!
+                  </div>
+              </div>
+              <div class="row py-3">
+                  <div class="col-lg-9 m-auto">
+                      <div class="row">
+                        <div class="col-lg-4">
+                            <h6>LOCATION</h6>
+                            <p>Cracow - Main square 2/6</p>
+
+                            <h6>PHONE</h6>
+                            <p>+ 22 434 364 456</p>
+
+                            <h6>EMAIL</h6>
+                            <p>dummy@email.com</p>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control bg-light" placeholder="First Name" />
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control bg-light" placeholder="Last Name" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 py-3">
+                                    <textarea class="form-control bg-light" placeholder="Enter message" cols="10" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <button class="btn1">Submit</button>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section>
+        <div id="map"></div>
+      </section>
+
+      <footer >
+          <div class="footerWrapper py-05">
+              <div class="container py-5">
+                <div class="row">
+                    <div class="clo-lg-9 m-auto text-center">
+                        <h1>Add to subscribers!</h1>
+                        <input type="text" class="input" placeholder="Enter your email">
+                        <button class="btn2">Submit</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+
+  </body>
+</html>
