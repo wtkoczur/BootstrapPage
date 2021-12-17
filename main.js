@@ -19,7 +19,7 @@ window.onscroll = function(){
 
 var i = 0;
 var images = [];
-var time = 1000;
+var time = 4000;
 
 images[0] = "url(img/pic1.jpg)";
 images[1] = "url(img/pic2.jpg)";
